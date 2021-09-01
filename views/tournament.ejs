@@ -1,0 +1,33 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  
+  <body>
+      
+    <%- include("./partials/nav.ejs") %>
+  <table>
+    
+        <tr>
+            <td>
+            <p>season name: </p>    <%=data.name%>
+            </td>
+        </tr>
+        <tr>  
+            <td>
+               <p> season country:</p> <%=data.country.shortName%>
+            </td> 
+        </tr>  
+        <tr>
+            <td>
+               <p> season year :</p> <%=data.season.name%>
+            </td> 
+           
+        </tr>
+     
+
+        
+      
+  </table>
+  
+    <%- include("./partials/footer.ejs") %>
+  </body>
+  </html>
